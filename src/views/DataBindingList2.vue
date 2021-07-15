@@ -41,7 +41,7 @@ export default {
         unmounted(){},
         methods: {
           async getList() {
-            this.productList = await this.$api('https://951e65e0-3cee-417c-9d1c-81ce680050a8.mock.pstmn.io/list', 'get');
+            this.productList = await this.$api('https://b63bfbfc-6119-4819-a767-68fddec72cab.mock.pstmn.io/list', 'get');
 
           }
         }

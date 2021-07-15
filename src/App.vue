@@ -23,11 +23,22 @@
       <router-link to="/computed">Computed</router-link> |
       <router-link to="/watch">Watch</router-link> |
       <router-link to="/databindinglist2">Data Binding List2</router-link> |
+      <router-link to="/nestedcomponent">nestedcomponent</router-link> |
     </div>
     <router-view />
+    <CompositionAPIProvide/>
+    <Plugins/>
+    <input type="text" v-focus>
   </div>
 </template>
+<script>
+import CompositionAPIProvide from "./views/CompositionAPIProvide";
+import Plugins from "./views/Plugins";
 
+export default {
+  components: {CompositionAPIProvide, Plugins}
+}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

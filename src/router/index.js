@@ -21,6 +21,7 @@ import EventChange from "@/views/EventChange";
 import Computed from "@/views/Computed";
 import Watch from "@/views/Watch";
 import DataBindingList2 from "@/views/DataBindingList2";
+import NestedComponent from "../components/NestedComponent";
 
 const routes = [
   {
@@ -140,6 +141,11 @@ const routes = [
     path: "/databindinglist2",
     name: "databindinglist2",
     component: DataBindingList2,
+  },
+  {
+    path: "/nestedcomponent",
+    name: "nestedcomponent",
+    component: NestedComponent,
   },
 ]
 
