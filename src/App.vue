@@ -26,17 +26,19 @@
       <router-link to="/nestedcomponent">nestedcomponent</router-link> |
     </div>
     <router-view />
-    <CompositionAPIProvide/>
-    <Plugins/>
-    <input type="text" v-focus>
+    <Login/>
+    <NaverLogin/>
   </div>
 </template>
 <script>
-import CompositionAPIProvide from "./views/CompositionAPIProvide";
-import Plugins from "./views/Plugins";
+// import CompositionAPIProvide from "./views/CompositionAPIProvide";
+// import Plugins from "./views/Plugins";
+// import StoreAccess from "@/views/StoreAccess";
+import Login from "@/views/Login";
+import NaverLogin from "@/views/NaverLogin";
 
 export default {
-  components: {CompositionAPIProvide, Plugins}
+  components: {Login, NaverLogin}
 }
 </script>
 <style>

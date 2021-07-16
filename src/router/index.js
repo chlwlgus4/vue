@@ -22,6 +22,7 @@ import Computed from "@/views/Computed";
 import Watch from "@/views/Watch";
 import DataBindingList2 from "@/views/DataBindingList2";
 import NestedComponent from "../components/NestedComponent";
+import Login from "@/views/Login";
 
 const routes = [
   {
@@ -147,6 +148,11 @@ const routes = [
     name: "nestedcomponent",
     component: NestedComponent,
   },
+  {
+    path: '/kakaologin',
+    name: 'kakaologin',
+    component: Login
+  }
 ]
 
 const router = createRouter({
